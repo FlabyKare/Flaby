@@ -3,6 +3,12 @@
     margin-left: 40px !important;
   }
 }
+@media (min-width: 350px) and (max-height: 499.98px) {
+  .menu_open .menu_container .menu_link {
+    font-size: 0.8rem !important;
+    line-height: 35px !important;
+  }
+}
 .burger {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -48,6 +54,9 @@ ul, ol {
   .nav {
     display: none !important;
   }
+  .menu_wrapper {
+    display: none;
+  }
   .burger {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -63,12 +72,8 @@ ul, ol {
   overflow: hidden !important;
 }
 
-.menu_wrapper {
-  top: 65%;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
+.d-none {
+  display: none;
 }
 
 .transform_rotate {
@@ -115,9 +120,9 @@ ul, ol {
 }
 
 .menu_open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   height: 100vh !important;
   width: 100%;
   position: absolute;

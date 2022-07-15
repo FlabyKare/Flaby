@@ -27,6 +27,9 @@ ul, ol {
     .nav{
         display: none !important;
     }
+    .menu_wrapper{
+        display: none;
+    }
     .burger{
         display: flex !important;
     }
@@ -42,12 +45,8 @@ ul, ol {
     overflow: hidden !important;
 }
 
-.menu_wrapper{
-    top: 65%;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
+.d-none{
+    display: none ;
 }
 
 .transform_rotate{
@@ -86,7 +85,7 @@ ul, ol {
     cursor: pointer;
 }
 .menu_open{
-    display: flex;
+    display: flex !important;
     height: 100vh !important;
     width: 100%;
     position: absolute;
