@@ -3,6 +3,20 @@ body {
     margin: 0;
     font-family: "Raleway-Bold", sans-serif;
     overflow-x: hidden !important;
+
+    &::-webkit-scrollbar {
+        z-index: 999999999999999999999999999999999999 !important;
+        background: #d7e4ee;
+      }
+      &::-webkit-scrollbar-track {
+        z-index: 999999999999999999999999999999999999 !important;
+
+      }
+      &::-webkit-scrollbar-thumb {
+        z-index: 999999999999999999999999999999999999 !important;
+        background: #428fca;
+        border-radius:20px;
+      }
 }
 
 *,
@@ -37,9 +51,10 @@ ul, ol {
 }
 
 @media(min-width:1200px){
-    .burger,.menu_wrapper{
+    .burger,.menu_wrapper,.menu_open{
         display: none !important;
     }
+
 }
 .overflow_hidden{
     overflow: hidden !important;
@@ -68,7 +83,7 @@ ul, ol {
         display: none !important;
     }
     .span_burger3{
-        margin-top: -27%;
+        margin-top: -31.3%;
         transform: rotate(45deg);
         transition: .5s;
 
@@ -85,7 +100,7 @@ ul, ol {
     cursor: pointer;
 }
 .menu_open{
-    display: flex !important;
+    display: flex ;
     height: 100vh !important;
     width: 100%;
     position: absolute;
@@ -140,6 +155,8 @@ header {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    min-height: 937px;
+    max-height: 938px;
     padding-top: 32px;
     padding-bottom: 209px;
 }
@@ -387,9 +404,18 @@ header {
     text-align: left;
     margin: 310px 277px 165px 0;
     align-items: center;
+    .gadgets_img{
+        img{
+            width: 100% !important;
+        }
+    }
 
 }
-
+.costumer_2_img{
+    img{
+        width: 100% !important;
+    }
+}
 .gadgets_info {
     width: 700px;
     height: 542px;
@@ -465,16 +491,21 @@ ul {
 /*=============================================*/
 
 .wrapper_service {
-    margin-top: 109px;
-    margin-bottom: 168px;
+
+    margin: 109px auto 168px;
+    max-width: 1130px;
+    .wrapper_col1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        justify-content: center;
+        margin-bottom: 102px;
+    }
+    
 }
 
 
-.wrapper_col1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 102px;
-}
 
 .sub_col_wrapper {
     display: flex;
@@ -516,6 +547,7 @@ ul {
 
 .col_margin {
     margin-left: 65px;
+    margin-bottom: 7%;
 }
 
 /*=============================================*/
@@ -536,18 +568,22 @@ ul {
 }
 
 .author {
-    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
     margin-bottom: 109px;
     position: relative;
-    top: 10%;
+    margin-top: 10%;
 
 }
 
 .author_img {
     z-index: 4;
     position: absolute;
-    top: -39%;
-    left: 47%;
+    top: -78%;
+    left: 40%;
+
 }
 
 .card1 {
@@ -565,28 +601,26 @@ ul {
     z-index: 2;
     width: 790px;
     height: 309px;
-    margin: 0 auto;
-    opacity: 0.8;
+    margin: -282.5px auto 0;
+
     border-radius: 10px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.11);
     background-color: #fff;
-    position: absolute;
-    top: -10.8%;
-    left: 29.3%;
 }
 
 .card3 {
     z-index: 3;
     width: 730px;
     height: 351px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -333px auto 0;
     border-radius: 10px;
     box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px rgba(0, 0, 0, 0.08);
     background-color: #fff;
-    position: absolute;
-    top: -19.5%;
-    left: 30.9%;
+
 }
 
 
@@ -627,16 +661,18 @@ ul {
 .card3_content {
     margin: 0 auto;
     position: relative;
-    top: 19%;
+
 }
 
 
 .next_buttons {
     display: flex;
-    position: absolute;
-    bottom: 12%;
-    left: 43.5%;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+    *{
+        cursor: pointer;
+    }
 }
 
 .previous_text {
@@ -689,6 +725,7 @@ ul {
     height: 1000px;
     padding-top: 68px;
     background: url(../img/Price_plan/Bg.jpg);
+
     background-size: cover;
 }
 
@@ -710,14 +747,18 @@ ul {
     border-radius: 20px;
     border: solid 1px rgba(0, 0, 0, 0.04);
     background-image: url(../img/Price_plan/card_bg.jpg);
+        transition: 0.35s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .block2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 349px;
-    height: 633px;
+    width: 320px;
+    height: 581px;
     padding: 0.6px 0.8px 50px 14px;
     border-radius: 20px;
     box-shadow: 0 0 51px 0 rgba(92, 149, 161, 0.33);
@@ -726,6 +767,11 @@ ul {
     background-size: cover;
     margin-right: 46px;
     margin-left: 46px;
+    transition: 0.35s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    
 }
 
 .block3 {
@@ -737,6 +783,10 @@ ul {
     border-radius: 20px;
     border: solid 1px rgba(0, 0, 0, 0.04);
     background-image: url(../img/Price_plan/card_bg.jpg);
+    transition: 0.35s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 
