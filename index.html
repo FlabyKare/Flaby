@@ -23,12 +23,22 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<script src="jQuery/jquery-3.6.0.min.js"></script>
+
 
 </head>
-<body>
+<body class="body">
+    <div class="menu_wrapper">
+        <div class="menu_container">
 
-<header>
+            <a class="menu_link" href="#">home</a>
+            <a class="menu_link" href="#">blog</a>
+            <a class="menu_link" href="#">portfolio</a>
+            <a class="menu_link" href="#">services</a>
+            <a class="menu_link" href="#">contact us</a>
+            <a href="#" class="button menu_link">Login</a>
+        </div>
+    </div>
+<header class="header_none">
 
     <div class="header_wrapper">
         
@@ -42,8 +52,14 @@
 					<a class="nav_link" href="#">portfolio</a>
 					<a class="nav_link" href="#">blog</a>
 					<a class="nav_link" href="#">contact us</a>
-                <a href="#" class="button">Login</a>
+                    <a href="#" class="button">Login</a>
+
             </nav>
+            <div class="burger">
+                <span class="span_burger span_burger1"></span>
+                <span class="span_burger span_burger2"></span>
+                <span class="span_burger span_burger3"></span>
+            </div>
         </div>
         <hr>
 
@@ -442,6 +458,8 @@
         <div class="words1">Template Designed By <span>Sourabh Barua</span></div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
