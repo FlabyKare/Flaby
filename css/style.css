@@ -635,6 +635,20 @@
   background: #fff;
 }
 
+@media (min-height: 800px) and (min-width: 992px) {
+  .element-animation {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .element-show {
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 body {
   margin: 0;
   font-family: "Raleway-Bold", sans-serif;
@@ -660,11 +674,17 @@ body::-webkit-scrollbar-thumb {
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -686,7 +706,9 @@ ul, ol {
   }
 }
 @media (min-width: 1200px) {
-  .burger, .menu_wrapper, .menu_open {
+  .burger,
+.menu_wrapper,
+.menu_open {
     display: none !important;
   }
 }
@@ -760,8 +782,6 @@ ul, ol {
   top: 0;
   z-index: 10;
   background: cadetblue;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
 }
 .menu_open .menu_container {
   display: -webkit-box;
@@ -795,7 +815,7 @@ ul, ol {
   z-index: 10;
 }
 .menu_open .menu_container .button {
-  background: #3293E2;
+  background: #3293e2;
   width: 100%;
   padding: 0px 18px;
   border-radius: 20px;
@@ -850,7 +870,7 @@ header {
 }
 
 .nav_link:hover {
-  color: #105FBE;
+  color: #105fbe;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -865,7 +885,7 @@ header {
   height: 2px;
   display: block;
   margin-top: 5px;
-  background-color: #105FBE;
+  background-color: #105fbe;
   top: 100%;
   left: 0;
   z-index: 1;
@@ -891,7 +911,7 @@ header {
 }
 
 .button:hover {
-  background: #3293E2;
+  background: #3293e2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -946,7 +966,7 @@ header {
 }
 
 .google:hover {
-  background: #EAEAEA;
+  background: #eaeaea;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -975,7 +995,7 @@ header {
 }
 
 .head_link2:hover {
-  background: #3293E2;
+  background: #3293e2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -1158,7 +1178,7 @@ ul {
 }
 
 .gadgets_link:hover {
-  background-color: #11BCEE;
+  background-color: #11bcee;
 }
 
 /*=============================================*/
@@ -1600,7 +1620,7 @@ ul {
 }
 
 .block_button:hover {
-  background-color: #23AAE4;
+  background-color: #23aae4;
 }
 
 .block_button_text {
@@ -1704,7 +1724,7 @@ input:focus {
 }
 
 .form_batton:hover {
-  background-color: #23AAE4;
+  background-color: #23aae4;
 }
 
 .hr2 {
